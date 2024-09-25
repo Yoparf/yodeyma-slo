@@ -1,0 +1,172 @@
+/*******************************************************************
+          Text banner  styles
+********************************************************************/
+#textbannersmodule ul
+{
+
+    list-style-type: none;
+
+}
+#textbannersmodule li
+{
+    margin-top: 20px;
+
+    list-style-type: none;
+
+    text-align: center;
+
+}
+#textbannersmodule li:last-child .txtbanner
+{
+    padding-bottom: 0;
+
+    border-right: none;
+    border-bottom: none;
+}
+#textbannersmodule li .circle
+{
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#textbannersmodule a:hover
+{
+    text-decoration: none;
+}
+#textbannersmodule li img
+{
+    width: 100%;
+}
+#textbannersmodule .txtbanner
+{
+    position: relative;
+
+    padding-left: 75px;
+
+    border-right: 1px solid #ddd;
+}
+@media (max-width: 767px)
+{
+    #textbannersmodule .txtbanner
+    {
+        padding-bottom: 20px;
+
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
+#textbannersmodule .txtbanner span
+{
+    -webkit-transition: all 200ms ease-in-out;
+       -moz-transition: all 200ms ease-in-out;
+         -o-transition: all 200ms ease-in-out;
+            transition: all 300ms ease-in-out;
+}
+#textbannersmodule .txtbanner:hover span
+{
+    zoom: 1;
+
+    opacity: .7;
+
+    filter: alpha(opacity=70);
+}
+#textbannersmodule li.last-item .txtbanner
+{
+    border-right: none;
+}
+#textbannersmodule .txttitle
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+
+    display: block;
+}
+#textbannersmodule .txtlegend
+{
+    font-size: 14px;
+
+    display: block;
+
+    margin-top: 3px;
+}
+#textbannersmodule.no_borders .txtbanner
+{
+    border: none !important;
+}
+#textbannersmodule.iconleft li
+{
+    text-align: left;
+}
+#textbannersmodule.iconleft a
+{
+    display: block;
+
+    padding-top: 5px;
+}
+#textbannersmodule.iconleft .circle
+{
+    //float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+}
+#textbannersmodule.iconleft .circle i
+{
+    font-size: 35px;
+    line-height: 60px;
+}
+
+#textbannersmodule .icon-yodeyma-truck
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 60px;
+    height: 60px;
+
+    background: transparent url('../../../img/yodeyma-footer-truck.svg') no-repeat center center;
+}
+
+#textbannersmodule .icon-yodeyma-return {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 60px;
+    height: 60px;
+
+    background: transparent url('../../../img/yodeyma-footer-return.svg') no-repeat center center;
+}
+
+@media(min-width:992px)
+{
+    .yodeyma-footer
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+            flex-direction: row;
+
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+
+        justify-content: center;
+    }
+    .yodeyma-footer-col
+    {
+        width: 20%;
+        padding: 0 5px;
+    }
+}

@@ -1,0 +1,67 @@
+
+.ets-ept-prod-tabs.hooks_5 .tab-menu-group.tabs li.nav-item h4 {
+    margin-bottom: 0!important;
+    display: block;
+}
+#footer .ets-ept-prod-tabs .nav-item h4 a {
+    font: inherit;
+    display: block;
+    text-decoration: none!important;
+}
+.footer-container #footer .ets-ept-prod-tabs.hooks_5 .nav-item h4 a:not(.active){
+    color: #777777;
+}
+.ets-ept-prod-tabs.hooks_5 {
+    margin-top: 30px;
+}
+footer .ets-ept-prod-tabs.hooks_5 .extra-tab-content.tab-content {
+    margin-top: 0;
+    padding: 15px 0;
+}
+.tab-menu-group.tabs .extra-tab-content {
+    padding: 15px;
+    margin-top: -1px;
+}
+.ets-ept-prod-tabs.other_hooks .tab-menu-group.tabs .extra-tab-content {
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.ets-ept-prod-tabs.other_hooks .tab-menu-group.tabs li.nav-item.active a.js-ets-ept-tab-item-menu {
+    background: #fff;
+    border-color: #ddd;
+}
+.ets-ept-prod-tabs.other_hooks .tab-menu-group.tabs li.nav-item a.js-ets-ept-tab-item-menu {
+    margin-bottom: 0;
+    border-bottom: 0;
+    margin-left: 0;
+    background: transparent;
+    border-color: transparent;
+}
+.box-cart-bottom .ets-ept-prod-tabs.other_hooks.hooks_2 {
+    margin: 20px 10px 10px;
+    width: auto;
+}
+.box-cart-bottom .ets-ept-prod-tabs {
+    margin: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

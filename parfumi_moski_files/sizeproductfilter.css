@@ -1,0 +1,85 @@
+#sizeproductfilter {
+    border: 1px solid #e7e7e7;
+    padding-bottom: 15px;
+    overflow: auto;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#sizeproductfilter h1 {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    text-transform: uppercase!important;
+    font-size: 23px;
+}
+
+#sizeproductfilter h3.selectsize {
+    margin: 0 0 10px;
+    text-align: center;
+    font-size: 18px;
+    text-transform: none;
+}
+
+#sizeproductfilter .filter-size-item.nomargin.hiddable {
+    width: 33% !important;
+    float: left;
+    padding: 0!important;
+}
+
+#sizeproductfilter .filter-size-item .filter-button {
+    background-color: white;
+    border: 1px solid #000000 !important;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 35px;
+    width: 84px;
+}
+
+#sizeproductfilter .filter-size-item .filter-button:hover {
+    background-color: #000000;
+}
+
+#sizeproductfilter .filter-size-item .filter-button:hover label {
+    color: white;
+}
+
+#sizeproductfilter .filter-size-item .filter-button .radio {
+    display: none;
+}
+
+#sizeproductfilter .filter-size-item .filter-button label {
+    text-align: center;
+    padding: 6px 0px;
+    display: block;
+    font-size: 18px;
+}
+
+#sizeproductfilter .filter-size-item .filter-button label:hover {
+    cursor: pointer;
+}
+
+#sizeproductfilter .filter-size-item .filter-button label:hover {
+
+}
+
+#sizeproductfilter .filter-size-item input {
+
+}
+
+#sizeproductfilter_ajax_loader p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#sizeproductfilter_products_loader_icon {
+    z-index: 9999;
+    text-align: center;
+    top: 60px;
+    left: 0;
+    position: absolute;
+    background: white;
+    padding-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd; }

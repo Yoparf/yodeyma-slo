@@ -1,0 +1,40 @@
+.options-box {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+}
+.row-promotions {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid #dddddd;
+}
+.promo-tit {
+    padding-bottom: 15px;
+}
+.promo-name {
+    font-size: 1.2em;
+    vertical-align: middle;
+    line-height: 27px;
+}
+.promo-name,
+.options-box #bottom_gift {
+    display: block;
+    text-align: center;
+}
+.options-box #bottom_gift .btn {
+    display: inline-block;
+}
+@media(min-width: 992px) {
+    .options-box #bottom_gift {
+        display: block;
+        text-align: center;
+    }
+    .promo-name
+    {
+        display: inline-block;
+        text-align: right;
+    }
+    .options-box #bottom_gift .btn {
+        float: right;
+    }
+}
