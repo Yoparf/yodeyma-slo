@@ -1,0 +1,176 @@
+.js-ets-ept-tab-item-content .content {
+    word-break: break-word;
+}
+.tab-content iframe,
+.tab-item-content * {
+    max-width: 100%;
+}
+.product-information div#tab-content {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.product-information div#tab-content .tab-pane,
+.product-information div#tab-content .tab-pane *{
+    max-width: 100%;
+}
+.product-information div#tab-content .tab-pane a,
+.product-information div#tab-content .tab-pane video,
+.product-information div#tab-content .tab-pane *,
+.product-information div#tab-content .tab-pane a img {
+    outline: none;
+    border:none;
+}
+.ets-ept-prod-tabs.hooks_2 {
+    margin-top: 0;
+}
+.ets-ept-prod-tabs .tab-menu-group .extra-tab-content .tab-item{
+    display: none;
+}
+.ets-ept-prod-tabs .tab-menu-group .extra-tab-content .tab-item.active {
+    display: block;
+    opacity: 1;
+}
+#footer .ets-ept-prod-tabs .nav-item h4 a {
+    font: inherit;
+}
+.ets-ept-image-desc {
+    margin-top: 7px;
+}
+.ets-ept-prod-tabs div.tab-title {
+    margin-bottom: 3px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.ets-ept-file-desc {
+    margin-top: 5px;
+}
+.ets-ept-prod-tabs.hooks_5 li.nav-item h4 {
+    margin-bottom: 0;
+}
+.ets-ept-prod-tabs .tab-menu-group li.nav-item {
+    padding-bottom: 0!important;
+}
+.ets-ept-list-tabs-more-info li.nav-item a.nav-link {
+    border-bottom-width: 3px;
+}
+.tabs.ets-ept-list-tabs-more-info .nav-tabs .nav-item {
+    margin-top: .125rem;
+}
+.tab-item-content img,
+.js-ets-ept-tab-item-content img {
+    max-width: 100%;
+    height: auto;
+}
+a.ets-ept-file {
+    border: none;
+    padding: 8px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    max-width: 100%;
+    white-space: nowrap;
+    font-weight: normal;
+    box-shadow: none;
+    text-transform: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ets-ept-file span.ets_ept_icon_file svg {
+    display: inline-block;
+    width: 14px;
+    fill: #fff;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+.ets-ept-prod-tabs .tab-item {
+    margin-bottom: 10px;
+}
+.tab-item-content {
+    font-weight: normal;
+    font-size: 13px;
+}
+.product-add-to-cart.has_ets_ept .product-quantity {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+.ets-ept-prod-tabs .tab-item-content {
+    word-break: break-word;
+}
+.tab-menu-group.tabs a.js-ets-ept-tab-item-menu {
+    padding: 5px;
+    margin: 0 5px;
+    font-size: 14px;
+        background: transparent;
+    border-bottom: 3px solid transparent;
+}
+.tab-menu-group.tabs li:first-child a.js-ets-ept-tab-item-menu {
+    margin-left: 0;
+}
+.tab-menu-group.tabs ul.nav.nav-tabs {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    width: 100%;
+}
+.extra-tab-content.tab-content .js-ets-ept-tab-item-content,
+.extra-tab-content.tab-content .js-ets-ept-tab-item-content .content {
+    font-size: 14px;
+    color: #777;
+}
+.tab-menu-group.tabs .nav-tabs .nav-item {
+    margin-left: 0;
+    background: transparent!important;
+}
+.ets-ept-prod-tabs {
+    width: 100%;
+    clear: both;
+        margin-bottom: 10px;
+    margin-top: 10px;
+}
+.ets-ept-color-box {
+    width: 30px;
+    height: 30px;
+    background-color: #f2f2f2;
+}
+footer .ets-ept-prod-tabs .tab-menu-group.tabs {
+    padding: 0 15px;
+    box-shadow: none;
+    margin-bottom: 30px;
+}
+footer .ets-ept-prod-tabs .tab-menu-stacked {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+.box-cart-bottom .ets-ept-prod-tabs.other_hooks {
+    margin: 20px 15px 10px;
+    width: auto;
+}
+.ets-ept-prod-tabs .ets-ept-icon-tab svg, .ets-ept-icon-svg svg {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 4px;
+    fill: inherit;
+    color: inherit;
+}
+a.nav-link {
+    fill: #7a7a7a;
+}
+.nav-link.active {
+    fill: #24b9d7;
+}
+.ets-ept-icon-img-tab{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-right: 10px;
+}
+.ets-ept-icon-img-tab img{
+    max-width: 100%;
+    max-height: 100%;
+}
