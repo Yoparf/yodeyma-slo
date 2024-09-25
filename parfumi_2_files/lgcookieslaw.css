@@ -1,0 +1,48 @@
+
+
+.lgcookieslaw-banner {
+    background-color: rgba(255,255,255,0.9);
+    color: #3b3b3b !important;
+    -webkit-box-shadow: 0px 1px 5px 0px #000000;
+    -moz-box-shadow:    0px 1px 5px 0px #000000;
+    box-shadow:         0px 1px 5px 0px #000000;
+    
+    bottom:0;
+    
+}
+#lgcookieslaw_banner .lgcookieslaw-message p {
+    color: #3b3b3b !important;
+}
+#lgcookieslaw_banner .lgcookieslaw-message a {
+    color: #3b3b3b !important;
+    border-bottom: 1px solid #3b3b3b;
+}
+.lgcookieslaw-modal-body {
+    border-top: 4px solid #;
+}
+.lgcookieslaw-banner .lgcookieslaw-btn {
+    border-color: # !important;
+    background: # !important;
+    color: # !important;
+}
+
+/* New module*/
+/*.lgcookieslaw-section-description ul li:before {
+    color: #!important;
+}*/
+/*input:checked + .lgcookieslaw-slider,
+.lgcookieslaw-slider-checked {
+    background-color: #!important;
+}*/
+input:focus + .lgcookieslaw-slider,
+.lgcookieslaw-slider-checked {
+    box-shadow: 0 0 1px #!important;
+}
+.lgcookieslaw-accept-all {
+    color: # !important;
+    background: #!important;
+}
+.lgcookieslaw-message-floating {
+    border: 1px solid #;
+}
+

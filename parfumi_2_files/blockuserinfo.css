@@ -1,0 +1,190 @@
+.header_user_info {
+  color: white;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+    .header_user_info {
+        text-align: center;
+        margin: 10px 0px;
+    }
+    .header_user_info_desktop,
+    .user_responsive {
+        display: none;
+    }
+    .logout.user_responsive2 {
+        position: absolute;
+        top: -32px;
+    }
+}
+
+@media(min-width: 429px) and (max-width: 767px) {
+    .logout.user_responsive2 {
+        position: absolute;
+        top: -42px;
+    }
+}
+.header_user_info_desktop .login {
+    display: none;
+}
+.header_user_info a {
+    cursor: pointer;
+    font-size: 13px;
+}
+  
+ /*====NEW====*/
+.header_user_info, .header_user_info a, .header_user_info a:link {
+    text-transform: uppercase !important;
+}
+
+.header_user_info img {
+    width: 13px;
+    margin-right: 3px;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.header_user_info .account-slash {
+    display: none!important;
+}
+
+@media (min-width:1000px){
+    .header_user_info {
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+
+    .header_user_info img {
+        width: 18px;
+        margin-right: 5px;
+    }
+
+    .header_user_info a, .header_user_info a:link {
+        overflow: hidden;
+        display: block;
+        font-size: 16px;
+        line-height: 0.9em;
+    }
+    .header_user_info_desktop {
+        background: #e4e4e4 url(../../../img/user_desktop.svg) no-repeat;
+        padding-left: 22px;
+    }
+    .header_user_info_desktop a:hover {
+        color: #000!important;
+    }
+    .header_user_info_desktop a {
+        margin-left: 27px;
+    }
+    .header_user_info_desktop .logout {
+        position: absolute;
+        top: -55px;
+        right: -134px;
+    }
+    .header_user_info_responsive {
+        order: 1;
+    }
+}
+
+ /*====NEW====*/
+.header_user_info_responsive {
+    margin: 0 5px;
+}
+
+.header_user_info_responsive a {
+    color: #fff!important;
+    background: #86083f;
+    border-radius: 20px;
+    padding: 8px 20px;
+}
+
+.header_user_info a.logout {
+    background: none;
+    color: #000 !important;
+    right: 10px;
+    font-size: 14px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+}
+
+.header_user_info_responsive a.account {
+    padding: 8px 15px;
+}
+
+@media (max-width:999px){
+	.header_user_info_desktop{
+		/*display: none;*/
+    
+	}
+    .header_user_info_responsive {
+        bottom: 15px;
+        right: calc(50% + 5px);
+        margin: 0;
+        position: absolute;
+        width: 50%;
+    }
+    .header_user_info_responsive a {
+        padding: 3px 10px;
+        display: block;
+        line-height: 21px;
+        min-width: 120px;
+        text-align: center;
+    }
+    .header_user_info_responsive a.account {
+        padding: 3px 10px;
+    }
+    .header_user_info a.logout {
+        font-size: 12px;
+        right: 10px;
+        top: -7px;
+    }
+    .b2ctob2b.b2ctob2b_responsive {
+        left: calc(50% + 5px);
+        width: 50%;
+    }
+    .b2ctob2b.b2ctob2b_responsive a {
+        font-size: 13px;
+        padding: 3px 7px;
+    }
+    .b2ctob2b.b2ctob2b_responsive a span {
+        text-align: center;
+        font-size: 13px;
+    }
+    .row-header {
+        padding: 15px 0px 75px;
+    }
+}
+
+@media (max-width:767px){
+    .header_user_info a.logout {
+        top: 0;
+    }
+    .header_user_info_responsive {
+        right: calc(50% + 2px);
+        width: 52%;
+    }
+    .b2ctob2b.b2ctob2b_responsive {
+        left: calc(50% + 2px);
+        width: 52%;
+    }
+    .b2ctob2b.b2ctob2b_responsive a {
+        padding: 3px 2px;
+    }
+    .header_user_info_responsive a span,
+    .b2ctob2b.b2ctob2b_responsive a span {
+        max-width: 145px;
+        display: block;
+        margin: auto;
+    }
+    .lang_bg .header_user_info_responsive a span,
+    .lang_bg .b2ctob2b.b2ctob2b_responsive a span,
+    .lang_cs .header_user_info_responsive a span,
+    .lang_cs .b2ctob2b.b2ctob2b_responsive a span,
+    .lang_de .header_user_info_responsive a span,
+    .lang_de .b2ctob2b.b2ctob2b_responsive a span,
+    .lang_pl .header_user_info_responsive a span,
+    .lang_pl .b2ctob2b.b2ctob2b_responsive a span,
+    .lang_sk .header_user_info_responsive a span,
+    .lang_sk .b2ctob2b.b2ctob2b_responsive a span   {
+        max-width: 100%;
+    }
+}
