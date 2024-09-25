@@ -1,0 +1,95 @@
+/*
+.yodeyma-search-inpage {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.yodeyma-search-inpage #search_block_top {
+    width: 100%!important;
+    margin: 0px!important;
+}
+.yodeyma-search-inpage #search_block_top .yodeyma-predict {
+    max-width: none;
+}
+#search_block_top_content
+{
+    padding: 0 15px;
+}
+#search_block_top
+{
+    position: relative;
+}
+#search_block_top .yodeyma-predict-tit
+{
+    font-size: 2em;
+    font-weight: 100;
+    line-height: 1.1;
+
+    padding-bottom: 10px;
+
+    text-align: center;
+}
+#search_block_top .yodeyma-predict
+{
+    position: relative;
+
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+    padding: 0;
+
+    border: 2px solid #ddd;
+}
+#search_block_top .yodeyma-predict p
+{
+    line-height: 1;
+
+    margin: 0;
+    padding: 0;
+}
+#search_block_top .yodeyma-predict label
+{
+    display: none;
+}
+#search_block_top .yodeyma-predict input[type='text']
+{
+    font-size: 14px;
+
+    width: 100%;
+    height: 36px;
+    padding: 6px;
+    padding-right: 67px;
+
+    border: none;
+}
+@media screen and (min-width: 768px)
+{
+    #search_block_top
+    {
+        margin-bottom: 40px;
+    }
+    #search_block_top .yodeyma-predict input[type='text']
+    {
+        font-size: 18px;
+    }
+}
+#search_block_top .yodeyma-predict button
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    overflow: hidden;
+
+    width: 67px;
+    height: 36px;
+
+    text-indent: -99999px;
+
+    border: none;
+    background: #ada1cb url('yodeyma-predict-lupa.svg') no-repeat center center;
+}
+#search_block_top .yodeyma-predict button:hover
+{
+    background-color: #7c6da4;
+}
+*/

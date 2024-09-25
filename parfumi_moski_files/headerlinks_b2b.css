@@ -1,0 +1,21 @@
+/* block top links */
+ul#header_links {
+	list-style-type: none;
+	float: left;
+}
+#header_links li {
+	float: left;
+	padding: 0px;
+	padding-right: 10px;
+}
+#header_links a {
+	text-align: center;
+}
+#header_links a:hover {
+	color: #bbbbbb;
+	text-decoration: none;
+}
+#header_links .separator{
+	position: relative;
+	top: -1px;
+	}

@@ -1,0 +1,40 @@
+/*
+categoryproductfilter css file
+*/
+
+#categoryproductfilter-list li {
+	padding-bottom: 15px;
+}
+
+#categoryproductfilter-list li a {
+	color: #000;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#categoryproductfilter-list li a:hover {
+	color: #CD1719;
+}
+
+#categoryproductfilter-list li a.active {
+	color: #CD1719;
+}
+
+
+#categoryproductfilter_ajax_loader p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#categoryproductfilter_products_loader_icon {
+    z-index: 9999;
+    text-align: center;
+    top: 60px;
+    left: 0;
+    position: absolute;
+    background: white;
+    padding-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    border-top: 1px solid #dddddd; 
+}

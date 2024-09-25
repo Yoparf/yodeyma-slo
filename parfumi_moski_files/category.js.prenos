@@ -1,0 +1,193 @@
+/*
+ * 2007-2014 PrestaShop
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@prestashop.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade PrestaShop to newer
+ * versions in the future. If you wish to customize PrestaShop for your
+ * needs please refer to http://www.prestashop.com for more information.
+ *
+ *  @author PrestaShop SA <contact@prestashop.com>
+ *  @copyright  2007-2014 PrestaShop SA
+ *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ *  International Registered Trademark & Property of PrestaShop SA
+ */
+$(document).ready(function () {
+    $(document).on('click', '.lnk_more', function (e) {
+        e.preventDefault();
+        $('#category_description_short').hide();
+        $('#category_description_full').show();
+        $(this).hide();
+    });
+    
+    /*Es necesario modifcar dinamicamente el tamaño de la descripción*/
+    /*
+    $( window ).resize(function() {
+        setProperty("#center_column ul.product_list > li", " div", "height");    
+    });
+    */
+    
+    /*Es necesario modifcar dinamicamente el tamaño de la descripción*/
+    //setProperty("#center_column ul.product_list > li", " div", "height");
+
+    // click promo-request
+    $(document).on('click', '.promo-request', function (e) {
+        e.preventDefault();
+        var redirect = $(this).attr('href');
+        var id_product = $(this).data('id-product');
+        if(isMuestrasPromocionalesOk()) {
+            if(isAvailable(id_product)){
+                window.location = redirect;
+            }else{
+                if (!!$.prototype.fancybox)
+                    $.fancybox.open([
+                        {
+                            type: 'inline',
+                            autoScale: true,
+                            minHeight: 30,
+                            content: '<p class="fancybox-error">' + error_stock_promocional + '</p>'
+                        }
+                    ], {
+                        padding: 0
+                    });
+                else
+                    alert(error_stock_promocional);
+            }
+        }else{
+            alert(txtMuestrasPromocionalesKO);
+        }
+    });
+
+});
+
+
+function isMuestrasPromocionalesOk()
+{
+    var url = baseDir + 'modules/muestraspromocionalesform/ajax.php';
+    var check_promocional = false;
+
+    $.ajax({
+        type: 'POST',
+        headers: { "cache-control": "no-cache" },
+        url: url + '?rand=' + new Date().getTime(),
+        async: false,
+        cache: false,
+        dataType : "json",
+        data: {ajax: true, method: 'checkMuestraPromocional'},
+    })
+    .done(function(jsonData) {
+            check_promocional = jsonData.check_promocional;
+    });
+    
+    return check_promocional;
+}
+
+    
+function isAvailable(id_product)
+{
+    var url       = baseDir + 'modules/muestraspromocionalesform/ajax.php';
+    var available = true;
+
+    $.ajax({
+        type: 'POST',
+        headers: { "cache-control": "no-cache" },
+        url: url + '?rand=' + new Date().getTime(),
+        async: false,
+        cache: false,
+        dataType : "json",
+        data: {ajax: true,method:'checkAvailability',id_product:id_product},
+    })
+    .done(function(jsonData) {
+            available = jsonData.available;
+    });
+
+    return available;
+}
+
+
+
+
+/*Es necesario modifcar dinamicamente el tamaño de la descripción*/
+function setProperty(object, tag, prop )
+{
+    if(!$('.product_list').hasClass('product_list_nojs')) {
+
+        //$('.product_list').css('visibility','hidden');
+
+        greatHeight = 0;
+        buttonHeight = 0;
+        if (tag !== "")
+            tag = " > " + tag;
+
+        $(object + tag).css(prop, 'auto');
+
+        $(object + tag).each(function (indice, elemento) {
+            //Obtenemos el tamaño de los objetos
+            tmpHeight = $(elemento).css(prop);
+            buttonHeight = $(elemento).find('a.button span').outerHeight(true);                
+
+            if (undefined != tmpHeight) {
+                tmpHeight = tmpHeight.split("px");
+                tmpHeight = parseInt(tmpHeight[0]);
+                //Comprobamos si el tamaño obtenido es mayor que el obtenido anteriormente
+                if (tmpHeight > greatHeight)
+                    greatHeight = tmpHeight;
+            }
+        });
+
+        // Hack to solve problem with extra height button +20px                                    
+        if (buttonHeight>60)
+            extraHeight = 20;
+        else
+            extraHeight = 0;
+
+        //Igualamos todos los objetos al mismo tamaño a partir del mayor
+        if (greatHeight != 0){
+            $(object + tag).each(function (indice, elemento) {
+                    $(elemento).css(prop, greatHeight+extraHeight);
+            });
+        }
+
+        //Iguala la categoría aunque este fuera del grid
+
+        /*
+        anchoVentana = $(window).width();
+        
+        if($('.cat_desc_like_product').length) {
+
+            if(anchoVentana > 480) {
+            
+                $firstProduct = $('.product_list li').first();
+                $firstProductWidth = $firstProduct.outerWidth();
+                $firstProduct.css('margin-left', $firstProductWidth);
+
+                $catTitle = $('.cat_desc_like_product');
+                $catTitle.css('height', greatHeight+extraHeight);
+                $catTitle.css('width', $firstProductWidth - 18);
+
+            } else {
+
+                $firstProduct.css('margin-left', '');
+                $catTitle.css('width', '');
+                $catTitle.css('height', '');
+
+            }
+            
+        }
+
+        $('.product_list').css('visibility','visible');
+
+        */
+
+    }
+}
